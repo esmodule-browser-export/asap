@@ -1,5 +1,5 @@
 {
-  "name": "asap",
+  "name": "asap-esmodule-browser-export",
   "version": "2.0.6",
   "description": "High-priority task queue for Node.js and browsers",
   "keywords": [
@@ -13,6 +13,7 @@
     "url": "https://github.com/kriskowal/asap.git"
   },
   "main": "./asap.js",
+  "module": "es/index.js",
   "browser": {
     "./asap": "./browser-asap.js",
     "./asap.js": "./browser-asap.js",
@@ -27,7 +28,8 @@
     "raw.js",
     "asap.js",
     "browser-raw.js",
-    "browser-asap.js"
+    "browser-asap.js",
+    "es/"
   ],
   "scripts": {
     "test": "npm run lint && npm run test-node",
