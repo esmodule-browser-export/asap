@@ -142,7 +142,7 @@ class Asap extends Raw {
         // Array-as-queue is good enough here, since we are just dealing with exceptions.
         this.pendingErrors = [];
         this.throwFirstError = this.throwFirstError.bind(this)
-        this.requestErrorThrow = this.rawAsap.makeRequestCallFromTimer(this.throwFirstError);
+        this.requestErrorThrow = this.makeRequestCallFromTimer(this.throwFirstError);
 
         this.getRawTask = this.getRawTask.bind(this)
         this.asap = this.asap.bind(this)
